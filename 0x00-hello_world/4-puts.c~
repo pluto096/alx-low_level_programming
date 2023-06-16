@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+/**
+ * main - Entry point of the program
+ *
+ * Description: This function serves as the entry point of the program.
+ *              It prints a string to the console.
+ *
+ * Return: 0 (Success)
+ */
+int main(void)
+{
+    char myStr1[] = "\"Programming is like building a multilingual puzzle";
+
+    puts(myStr1);
+
+    return 0;
+}
