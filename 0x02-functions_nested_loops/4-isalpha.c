@@ -1,13 +1,23 @@
-#include"main.h"
+#include "main.h"
+
 /**
- * main - checks for alphabetic character
- * @c: letter being tested
- * Return: Always 0
+ * _isalpha - check the code for ALX School students.
+ *
+ * @c: is c an integer argument
+ *
+ * Return: Always 0.
  */
+
 int _isalpha(int c)
 {
-	for((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
+
+	if (c >= 97 && c <= 122)
+	{
 		return (1);
-	else
-		return(0);
+	}
+	else if (c >= 65 && c <= 90)
+	{
+		return (1);
+	}
+	return (0);
 }
