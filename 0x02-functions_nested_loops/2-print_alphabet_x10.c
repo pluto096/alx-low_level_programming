@@ -4,7 +4,7 @@
  * Description: "10x alphabet"
  * Return: always 0
  */
-void print_alphabet_10x(void)
+void print_alphabet_x10(void)
 {
 	int x;
 	int y;
@@ -14,7 +14,6 @@ void print_alphabet_10x(void)
 		{
 			_putchar(x);
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
-	return (0);
 }
