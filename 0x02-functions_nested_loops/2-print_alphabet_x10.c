@@ -1,19 +1,22 @@
-#include"main.h"
+#include "main.h"
+
 /**
- * main - Entry point
- * Description: "10x alphabet"
- * Return: always 0
+ * print_alphabet_x10 - func
+ *
+ * Return - 0
  */
 void print_alphabet_x10(void)
 {
-	int x;
-	int y;
-	for(y = 0; y < 10; y++)
-	{
-		for(x = 97; x <= 122; x++)
-		{
-			_putchar(x);
-		}
-		_putchar('\n');
-	}
+int b = 0;
+while (b < 10)
+{
+char a = 'a';
+while (a <= 'z')
+{
+_putchar(a);
+a++;
+}
+_putchar('\n');
+b++;
+}
 }
