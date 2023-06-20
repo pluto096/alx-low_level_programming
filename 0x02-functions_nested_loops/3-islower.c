@@ -1,18 +1,22 @@
-#include"main.h"
+#include "main.h"
+
 /**
- * main - Entry point
- * Description: "program checks for lower case"
- * Return: always 0
+ * print_alphabet_x10 - func
+ *
+ * Return - 0
  */
-int _islower(int c)
+void print_alphabet_x10(void)
 {
-	if(c >= 97 && c <= 122)
-	{
-		return(1);
-	}
-	else
-	{
-		return(0);
-	}
-	_putchar('\n');
+int b = 0;
+while (b < 10)
+{
+char a = 'a';
+while (a <= 'z')
+{
+_putchar(a);
+a++;
+}
+_putchar('\n');
+b++;
+}
 }
