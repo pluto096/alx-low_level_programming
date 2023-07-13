@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * *malloc_checked(unsigned int b) - function that allocates memory
+ * *malloc_checked - function that allocates memory
  * @b: size of memory to allocate
  *
  * Return: Void has no return
@@ -10,14 +10,14 @@
 void *malloc_checked(unsigned int b)
 {
 	void *mem;
+
 	mem = malloc(b);
 
 	if (mem == NULL)
 	{
 		exit(98);
 	}
-	else
-	{
-		return (mem);
-	}
+
+	return (mem);
 }
+
